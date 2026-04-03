@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>投行观点雷达</title>
+    <meta name="description" content="投行观点雷达" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260403-2" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="grain"></div>
+
+    <main class="shell">
+      <section class="ticker panel dark-panel">
+        <div class="panel-head compact">
+          <div>
+            <h2>信号流</h2>
+          </div>
+        </div>
+        <div id="market-tape" class="market-tape"></div>
+      </section>
+
+      <section class="hero panel">
+        <div id="hero-metrics" class="hero-header"></div>
+      </section>
+
+      <section class="insight-stack">
+        <section class="panel">
+          <div class="panel-head compact">
+            <div>
+              <p class="kicker">主题热度</p>
+              <h2>资产热区</h2>
+            </div>
+          </div>
+          <div id="heat-zone" class="heat-zone"></div>
+        </section>
+
+        <section class="panel panorama-matrix">
+          <div class="panel-head compact">
+            <div>
+              <p class="kicker">主题全景</p>
+              <h2>分歧矩阵</h2>
+            </div>
+          </div>
+          <div id="matrix" class="matrix"></div>
+        </section>
+      </section>
+
+      <section class="panel shifts-section">
+        <div class="panel-head compact">
+          <div>
+            <p class="kicker">变化追踪</p>
+            <h2>最近转向</h2>
+          </div>
+        </div>
+        <div id="shift-summary" class="shift-summary"></div>
+        <div id="shift-grid" class="shift-grid"></div>
+        <div id="shift-actions" class="shift-actions"></div>
+      </section>
+
+      <section class="workspace-grid">
+        <section class="panel rail-panel">
+          <div class="panel-head compact">
+            <div>
+              <p class="kicker">范围事件</p>
+              <h2>事件流</h2>
+            </div>
+          </div>
+          <div class="rail-toolbar">
+            <div id="rail-bank-filter" class="rail-bank-filter"></div>
+          </div>
+          <div id="event-rail" class="event-rail"></div>
+        </section>
+
+        <section class="panel focus-panel">
+          <div id="event-detail" class="detail-card"></div>
+          <section class="signal-stage">
+            <div class="signal-stage-head">
+              <p class="kicker">观点拆解</p>
+              <h3>信号卡片</h3>
+            </div>
+            <div id="signal-list" class="signal-list"></div>
+          </section>
+        </section>
+
+        <aside class="trade-stage">
+          <div class="trade-stage-head">
+            <p class="kicker">交易表达</p>
+            <h3>执行面板</h3>
+          </div>
+          <div id="trade-panel" class="trade-panel"></div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./data.js?v=20260403-2"></script>
+    <script src="./main.js?v=20260403-2"></script>
+  </body>
+</html>
