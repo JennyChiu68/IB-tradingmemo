@@ -1018,7 +1018,7 @@
       .map((item) => item.asset);
 
     if (!assets.length) {
-      container.innerHTML = `<div class="panel-empty">当前范围没有可展示的分歧矩阵。</div>`;
+      container.innerHTML = `<div class="panel-empty">当前范围没有可展示的多空分歧。</div>`;
       return;
     }
 
